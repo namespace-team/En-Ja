@@ -1,0 +1,9 @@
+.moveCenter { display: flex; flex-flow: column; height: 100vh; justify-content: center; align-items: center; }
+
+.moveTop { display: flex; flex-flow: column; height: 100vh; align-items: center; }
+
+input { padding: 5px; border-radius: 5px; border: solid 1px coral; }
+
+ul li { list-style: square; }
+
+/*# sourceMappingURL=styles.css.map */

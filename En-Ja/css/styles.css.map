@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss"
+	],
+	"sourcesContent": [
+		".moveCenter{\n    display: flex;\n    flex-flow: column;\n    height: 100vh;\n    justify-content: center;\n    align-items: center;\n}\n\n.moveTop{\n  display: flex;\n  flex-flow: column;\n  height: 100vh;\n  // justify-content: center;\n  align-items: center;\n}\ninput{\n  padding: 5px;\n  border-radius: 5px;\n  border: solid 1px coral;\n}\nul li{\n  list-style: square;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,WAAW,CAAA,EACP,OAAO,EAAE,IAAI,EACb,SAAS,EAAE,MAAM,EACjB,MAAM,EAAE,KAAK,EACb,eAAe,EAAE,MAAM,EACvB,WAAW,EAAE,MAAM,GACtB;;AAED,AAAA,QAAQ,CAAA,EACN,OAAO,EAAE,IAAI,EACb,SAAS,EAAE,MAAM,EACjB,MAAM,EAAE,KAAK,EAEb,WAAW,EAAE,MAAM,GACpB;;AACD,AAAA,KAAK,CAAA,EACH,OAAO,EAAE,GAAG,EACZ,aAAa,EAAE,GAAG,EAClB,MAAM,EAAE,eAAe,GACxB;;AACD,AAAA,EAAE,CAAC,EAAE,CAAA,EACH,UAAU,EAAE,MAAM,GACnB"
+}
