@@ -14,25 +14,3169 @@
         <script src="/En-Ja/js/lunrjs.js"></script>
 
 <script>
+
+
 document.getElementById('formHolder').classList.remove("moveTop");
 document.getElementById('formHolder').classList.add("moveCenter");
+
 var documents = [{
-    "en": "tags",
-    "ja": "タグ"
+    "id": 0,
+    "en": "request changes",
+    "ja": "変更をリクエストする"
+    
     },{
-    "en": "prefectures",
-    "ja": "地域"
+    "id": 1,
+    "en": "confirm request changes",
+    "ja": "変更をリクエストする"
+    
     },{
+    "id": 2,
+    "en": "please select an agent",
+    "ja": "エージェントを選択してください"
+    
+    },{
+    "id": 3,
+    "en": "requested",
+    "ja": "処理中"
+    
+    },{
+    "id": 4,
+    "en": "completed",
+    "ja": "出金完了"
+    
+    },{
+    "id": 5,
+    "en": "all",
+    "ja": "すべて"
+    
+    },{
+    "id": 6,
+    "en": "initiated",
+    "ja": "注文済"
+    
+    },{
+    "id": 7,
+    "en": "delivered",
+    "ja": "配達完了"
+    
+    },{
+    "id": 8,
+    "en": "are you sure to complete withdrawal",
+    "ja": "出金してもよろしいですか？"
+    
+    },{
+    "id": 9,
+    "en": "total deposits",
+    "ja": "合計投資額"
+    
+    },{
+    "id": 10,
+    "en": "total angel points",
+    "ja": "残Angelポイント"
+    
+    },{
+    "id": 11,
+    "en": "total revenue",
+    "ja": "総売上"
+    
+    },{
+    "id": 12,
+    "en": "recently applied kyc",
+    "ja": "本人確認申請中"
+    
+    },{
+    "id": 13,
+    "en": "no recent kyc applied",
+    "ja": "本人確認申請はありません"
+    
+    },{
+    "id": 14,
+    "en": "recent withdrawal request",
+    "ja": "最近の出金リクエスト"
+    
+    },{
+    "id": 15,
+    "en": "no recent withdrawal request",
+    "ja": "最近の出金リクエストはありません"
+    
+    },{
+    "id": 16,
+    "en": "withdrawal completed",
+    "ja": "出金が完了しました。"
+    
+    },{
+    "id": 17,
+    "en": "unpaid",
+    "ja": "未払い"
+    
+    },{
+    "id": 18,
+    "en": "paid",
+    "ja": "支払済"
+    
+    },{
+    "id": 19,
+    "en": "unapplied",
+    "ja": "未申請"
+    
+    },{
+    "id": 20,
+    "en": "applying",
+    "ja": "申請中"
+    
+    },{
+    "id": 21,
+    "en": "requesting change",
+    "ja": "変更依頼中"
+    
+    },{
+    "id": 22,
+    "en": "approved",
+    "ja": "承認済"
+    
+    },{
+    "id": 23,
+    "en": "normal",
+    "ja": "通常のユーザー"
+    
+    },{
+    "id": 24,
+    "en": "agent",
+    "ja": "エージェント"
+    
+    },{
+    "id": 25,
+    "en": "change to agent",
+    "ja": "ユーザーがエージェントになりました。"
+    
+    },{
+    "id": 26,
+    "en": "all required items",
+    "ja": "すべて必須項目です"
+    
+    },{
+    "id": 27,
+    "en": "message successfully sent",
+    "ja": "メッセージは正常に送信されました。"
+    
+    },{
+    "id": 28,
+    "en": "invalid referral",
+    "ja": "無効な紹介"
+    
+    },{
+    "id": 29,
+    "en": "message",
+    "ja": "ページが見つかりません"
+    
+    },{
+    "id": 30,
+    "en": "page could not be displayed",
+    "ja": "アクセスしようとしたページは表示できませんでした。"
+    
+    },{
+    "id": 31,
+    "en": "try again",
+    "ja": "しばらくたってから再度アクセスしてください。"
+    
+    },{
+    "id": 32,
+    "en": "temporary registration completed",
+    "ja": "仮登録完了"
+    
+    },{
+    "id": 33,
+    "en": "if email not received",
+    "ja": "メールが届かない場合"
+    
+    },{
+    "id": 34,
+    "en": "check junk for email",
+    "ja": "「迷惑メールフォルダ」に振り分けられていないかご確認ください。"
+    
+    },{
+    "id": 35,
+    "en": "email incorrect then compete procedure again",
+    "ja": "メールアドレスが間違っていた場合は、再度アカウント登録フォーム　から手続きお願いいたします。"
+    
+    },{
+    "id": 36,
+    "en": "mail sent",
+    "ja": "メール送信完了"
+    
+    },{
+    "id": 37,
+    "en": "mail sent body",
+    "ja": "パスワードを再発行するためのメールをお送りしま"
+    
+    },{
+    "id": 38,
+    "en": "from the url sent in email",
+    "ja": "した。お送りしたメールに記載されているURLから"
+    
+    },{
+    "id": 39,
+    "en": "re register",
+    "ja": "再登録お願いします。"
+    
+    },{
+    "id": 40,
+    "en": "return to login",
+    "ja": "ログインページに戻る"
+    
+    },{
+    "id": 41,
+    "en": "password reset complete",
+    "ja": "パスワードの再設定の完了"
+    
+    },{
+    "id": 42,
+    "en": "password reset complete body",
+    "ja": "パスワードの再設定が完了しました。"
+    
+    },{
+    "id": 43,
+    "en": "return to login",
+    "ja": "ログインページに戻る"
+    
+    },{
+    "id": 44,
+    "en": "total points",
+    "ja": "総ポイント"
+    
+    },{
+    "id": 45,
+    "en": "referral code",
+    "ja": "紹介コード"
+    
+    },{
+    "id": 46,
+    "en": "total sales",
+    "ja": "総売上"
+    
+    },{
+    "id": 47,
+    "en": "copy url",
+    "ja": "URLをコピー"
+    
+    },{
+    "id": 48,
+    "en": "intro diagrams",
+    "ja": "紹介図"
+    
+    },{
+    "id": 49,
+    "en": "user id",
+    "ja": "ユーザーID"
+    
+    },{
+    "id": 50,
+    "en": "full name",
+    "ja": "フルネーム"
+    
+    },{
+    "id": 51,
+    "en": "mail address",
+    "ja": "メールアドレス"
+    
+    },{
+    "id": 52,
+    "en": "contact number",
+    "ja": "携帯番号"
+    
+    },{
+    "id": 53,
+    "en": "have not submitted documents",
+    "ja": "本人確認書類の提出をまだ行っていません"
+    
+    },{
+    "id": 54,
+    "en": "applying for verification",
+    "ja": "本人確認の申請中です"
+    
+    },{
+    "id": 55,
+    "en": "requested changes",
+    "ja": "要求された変更"
+    
+    },{
+    "id": 56,
+    "en": "necessary to change content",
+    "ja": "本人確認のご提出内容の変更が必要です"
+    
+    },{
+    "id": 57,
+    "en": "submit identity verification",
+    "ja": "本人確認書類を提出する"
+    
+    },{
+    "id": 58,
+    "en": "identity verification approved",
+    "ja": "本人確認が承認されました"
+    
+    },{
+    "id": 59,
+    "en": "title",
+    "ja": "本人確認"
+    
+    },{
+    "id": 60,
+    "en": "full name",
+    "ja": "氏名"
+    
+    },{
+    "id": 61,
+    "en": "postal code",
+    "ja": "郵便番号"
+    
+    },{
+    "id": 62,
+    "en": "prefecture",
+    "ja": "都道府県"
+    
+    },{
+    "id": 63,
+    "en": "municipal district",
+    "ja": "市町村区"
+    
+    },{
+    "id": 64,
+    "en": "address line 1",
+    "ja": "住所1"
+    
+    },{
+    "id": 65,
+    "en": "phone number",
+    "ja": "電話番号"
+    
+    },{
+    "id": 66,
+    "en": "identity verification documents",
+    "ja": "本人確認書類"
+    
+    },{
+    "id": 67,
+    "en": "upload a copy of document",
+    "ja": "パスポートもしくは運転免許証のコピーをアップロードしてください。"
+    
+    },{
+    "id": 68,
+    "en": "photo part of document",
+    "ja": "パスポートの写真部分もしくは運転免許証の表部分"
+    
+    },{
+    "id": 69,
+    "en": "select files",
+    "ja": "ファイルを選択"
+    
+    },{
+    "id": 70,
+    "en": "send",
+    "ja": "送信"
+    
+    },{
+    "id": 71,
+    "en": "application for verification complete",
+    "ja": "本人確認の申請が完了しました"
+    
+    },{
+    "id": 72,
+    "en": "application for verification incomplete",
+    "ja": "本人確認の申請が正常に完了しませんでした。"
+    
+    },{
+    "id": 73,
+    "en": "address updated successfully",
+    "ja": "USDTアドレスが正常に更新されました。"
+    
+    },{
+    "id": 74,
+    "en": "invalid address",
+    "ja": "無効なUSDTアドレスです。"
+    
+    },{
+    "id": 75,
+    "en": "address already used",
+    "ja": "USDTアドレスはすでに使用されています。"
+    
+    },{
+    "id": 76,
+    "en": "amount to transfer",
+    "ja": "送金金額を入力してください"
+    
+    },{
+    "id": 77,
+    "en": "settlement",
+    "ja": "決済"
+    
+    },{
+    "id": 78,
+    "en": "your usdt address",
+    "ja": "あなたのUSDTアドレス"
+    
+    },{
+    "id": 79,
+    "en": "enter usdt to use",
+    "ja": "入金及び出金に使用するあなたのUSDTアドレスを入力してください。"
+    
+    },{
+    "id": 80,
+    "en": "only eth based address for transaction",
+    "ja": "イーサリアムベースのUSDTアドレスのみ指定可能です。アドレス未入力の場合、入金及び出金を実行できません。"
+    
+    },{
+    "id": 81,
+    "en": "payment",
+    "ja": "入金"
+    
+    },{
+    "id": 82,
+    "en": "please remit any amount",
+    "ja": "以下の入金アドレスに入出金用USDTアドレスから任意の金額をから送金してください"
+    
+    },{
+    "id": 83,
+    "en": "minimum deposit is 1000 usdt",
+    "ja": "最低入金金額は1000USDTになります"
+    
+    },{
+    "id": 84,
+    "en": "wait until transaction is approved",
+    "ja": "送金のトランズアクションが承認されるまでお待ち下さい"
+    
+    },{
+    "id": 85,
+    "en": "after trans approved click confirm",
+    "ja": "トランズアクションが承認されましたら、「トランズアクションを確認」のボタンをクリックしてください"
+    
+    },{
+    "id": 86,
+    "en": "if trans is valid will reflect in angel",
+    "ja": "有効なトランズアクションが見つかりましたら、送金いただいた金額がAngelに反映されます"
+    
+    },{
+    "id": 87,
+    "en": "deposit address",
+    "ja": "入金アドレス"
+    
+    },{
+    "id": 88,
+    "en": "qr image",
+    "ja": "QR画像"
+    
+    },{
+    "id": 89,
+    "en": "copy address",
+    "ja": "アドレスをコピー"
+    
+    },{
+    "id": 90,
+    "en": "check transaction",
+    "ja": "トランズアクションを確認"
+    
+    },{
+    "id": 91,
+    "en": "withdrawal",
+    "ja": "出金"
+    
+    },{
+    "id": 92,
+    "en": "enter desired amount",
+    "ja": "ご希望の出金額をご入力ください"
+    
+    },{
+    "id": 93,
+    "en": "minimum withdrawal is 100 usdt",
+    "ja": "最低出金額は100USDTになります"
+    
+    },{
+    "id": 94,
+    "en": "amount after deducting will be sent",
+    "ja": "出金手数料の5％を差し引いた金額がUSDTアドレスに送金されます。送金は以下のように行います。"
+    
+    },{
+    "id": 95,
+    "en": "closing on 15",
+    "ja": "毎月15日に終了し、同じ月末に支払います"
+    
+    },{
+    "id": 96,
+    "en": "closing at the end of every month",
+    "ja": "月末に締め切り、翌月末に支払い"
+    
+    },{
+    "id": 97,
+    "en": "deposit withdrawal history",
+    "ja": "入出金履歴"
+    
+    },{
+    "id": 98,
+    "en": "payment completed",
+    "ja": "入金完了"
+    
+    },{
+    "id": 99,
+    "en": "purchase",
+    "ja": "購入する"
+    
+    },{
+    "id": 100,
+    "en": "number of units purchased",
+    "ja": "購入口数"
+    
+    },{
+    "id": 101,
+    "en": "cost",
+    "ja": "一口"
+    
+    },{
+    "id": 102,
+    "en": "mouth",
+    "ja": "口"
+    
+    },{
+    "id": 103,
+    "en": "purchase",
+    "ja": "購入する"
+    
+    },{
+    "id": 104,
+    "en": "order history",
+    "ja": "注文履歴"
+    
+    },{
+    "id": 105,
+    "en": "number",
+    "ja": "番号"
+    
+    },{
+    "id": 106,
+    "en": "order id",
+    "ja": "注文ID"
+    
+    },{
+    "id": 107,
+    "en": "product name",
+    "ja": "商品名"
+    
+    },{
+    "id": 108,
+    "en": "price",
+    "ja": "価格"
+    
+    },{
+    "id": 109,
+    "en": "currency",
+    "ja": "通貨"
+    
+    },{
+    "id": 110,
+    "en": "quantity",
+    "ja": "数量"
+    
+    },{
+    "id": 111,
+    "en": "order date time",
+    "ja": "注文日時"
+    
+    },{
+    "id": 112,
+    "en": "please update from my page",
+    "ja": "マイページセクションから更新してください。"
+    
+    },{
+    "id": 113,
+    "en": "enter your registered email",
+    "ja": "登録しているメールアドレスを入力してください"
+    
+    },{
+    "id": 114,
+    "en": "successfully verified the transaction",
+    "ja": "トランザクションを正常に検証しました。"
+    
+    },{
+    "id": 115,
+    "en": "transaction already verified",
+    "ja": "最後のトランザクションはすでに検証されています。"
+    
+    },{
+    "id": 116,
+    "en": "error message",
+    "ja": "USDTアドレスを確認できませんでした。 数分後にもう一度お試しください。"
+    
+    },{
+    "id": 117,
+    "en": "withdrawal success",
+    "ja": "出金をリクエストしました。"
+    
+    },{
+    "id": 118,
+    "en": "kyc must be approved to request withdrawal",
+    "ja": "出金をリクエストするには、本人確認が完了している必要があります。"
+    
+    },{
+    "id": 119,
+    "en": "usdt address needs to be verified",
+    "ja": "出金の前に、USDTアドレスの承認が必要です。"
+    
+    },{
+    "id": 120,
+    "en": "order placed successfully",
+    "ja": "注文は正常に行われました。"
+    
+    },{
+    "id": 121,
+    "en": "invalid order",
+    "ja": "注文に失敗しました。"
+    
+    },{
+    "id": 122,
+    "en": "product does not exist",
+    "ja": "製品は存在しません。"
+    
+    },{
+    "id": 123,
+    "en": "deposit successful",
+    "ja": "Paygoデポジットが成功しました。"
+    
+    },{
+    "id": 124,
+    "en": "deposit could not be verified",
+    "ja": "デポジットを確認できませんでした"
+    
+    },{
+    "id": 125,
+    "en": "deposit failed",
+    "ja": "入金に失敗しました"
+    
+    },{
+    "id": 126,
+    "en": "enable js to continue",
+    "ja": "続行するにはJavaScriptを有効にしてください。"
+    
+    },{
+    "id": 127,
+    "en": "back to account",
+    "ja": "戻る"
+    
+    },{
+    "id": 128,
+    "en": "confirmation sent at",
+    "ja": "パスワード確認送信時刻"
+    
+    },{
+    "id": 129,
+    "en": "confirmation token",
+    "ja": "パスワード確認用トークン"
+    
+    },{
+    "id": 130,
+    "en": "confirmed at",
+    "ja": "パスワード確認時刻"
+    
+    },{
+    "id": 131,
+    "en": "created at",
+    "ja": "購入日"
+    
+    },{
+    "id": 132,
+    "en": "current password",
+    "ja": "現在のパスワード"
+    
+    },{
+    "id": 133,
+    "en": "current sign in at",
+    "ja": "現在のログイン時刻"
+    
+    },{
+    "id": 134,
+    "en": "current sign in ip",
+    "ja": "現在のログインIPアドレス"
+    
+    },{
+    "id": 135,
+    "en": "email",
+    "ja": "Eメール"
+    
+    },{
+    "id": 136,
+    "en": "kyc name",
+    "ja": "フルネーム"
+    
+    },{
+    "id": 137,
+    "en": "title",
+    "ja": "タイトル"
+    
+    },{
+    "id": 138,
+    "en": "kyc phone",
+    "ja": "携帯電話番号"
+    
+    },{
+    "id": 139,
+    "en": "referral id",
+    "ja": "紹介ID"
+    
+    },{
+    "id": 140,
+    "en": "encrypted password",
+    "ja": "暗号化パスワード"
+    
+    },{
+    "id": 141,
+    "en": "failed attempts",
+    "ja": "失敗したログイン試行回数"
+    
+    },{
+    "id": 142,
+    "en": "last sign in at",
+    "ja": "最終ログイン時刻"
+    
+    },{
+    "id": 143,
+    "en": "last sign in ip",
+    "ja": "最終ログインIPアドレス"
+    
+    },{
+    "id": 144,
+    "en": "locked at",
+    "ja": "ロック時刻"
+    
+    },{
+    "id": 145,
+    "en": "password",
+    "ja": "パスワード"
+    
+    },{
+    "id": 146,
+    "en": "password confirmation",
+    "ja": "パスワード（確認用）"
+    
+    },{
+    "id": 147,
+    "en": "remember created at",
+    "ja": "ログイン記憶時刻"
+    
+    },{
+    "id": 148,
+    "en": "remember me",
+    "ja": "ログインを記憶する"
+    
+    },{
+    "id": 149,
+    "en": "reset password sent at",
+    "ja": "パスワードリセット送信時刻"
+    
+    },{
+    "id": 150,
+    "en": "reset password token",
+    "ja": "パスワードリセット用トークン"
+    
+    },{
+    "id": 151,
+    "en": "sign in count",
+    "ja": "ログイン回数"
+    
+    },{
+    "id": 152,
+    "en": "unconfirmed email",
+    "ja": "未確認Eメール"
+    
+    },{
+    "id": 153,
+    "en": "unlock token",
+    "ja": "ロック解除用トークン"
+    
+    },{
+    "id": 154,
+    "en": "updated at",
+    "ja": "更新日"
+    
+    },{
+    "id": 155,
+    "en": "user",
+    "ja": "ユーザー"
+    
+    },{
+    "id": 156,
+    "en": "confirmed",
+    "ja": "メールアドレスが確認できました。"
+    
+    },{
+    "id": 157,
+    "en": "resend confirmation instructions",
+    "ja": "アカウント確認メール再送"
+    
+    },{
+    "id": 158,
+    "en": "send instructions",
+    "ja": "アカウントの有効化について数分以内にメールでご連絡します。"
+    
+    },{
+    "id": 159,
+    "en": "send paranoid instructions",
+    "ja": "メールアドレスが登録済みの場合、本人確認用のメールが数分以内に送信されます。"
+    
+    },{
+    "id": 160,
+    "en": "already authenticated",
+    "ja": "すでにログインしています。"
+    
+    },{
+    "id": 161,
+    "en": "inactive",
+    "ja": "アカウントが有効化されていません。メールに記載された手順にしたがって、アカウントを有効化してください。"
+    
+    },{
+    "id": 162,
+    "en": "invalid",
+    "ja": "%{authentication_keys}またはパスワードが違います。"
+    
+    },{
+    "id": 163,
+    "en": "last attempt",
+    "ja": "もう一回誤るとアカウントがロックされます。"
+    
+    },{
+    "id": 164,
+    "en": "locked",
+    "ja": "アカウントはロックされています。"
+    
+    },{
+    "id": 165,
+    "en": "not found in database",
+    "ja": "%{authentication_keys}またはパスワードが違います。"
+    
+    },{
+    "id": 166,
+    "en": "timeout",
+    "ja": "セッションがタイムアウトしました。もう一度ログインしてください。"
+    
+    },{
+    "id": 167,
+    "en": "unauthenticated",
+    "ja": "アカウント登録もしくはログインしてください。"
+    
+    },{
+    "id": 168,
+    "en": "unconfirmed",
+    "ja": "メールアドレスの本人確認が必要です。"
+    
+    },{
+    "id": 169,
+    "en": "action",
+    "ja": "メールアドレスの確認"
+    
+    },{
+    "id": 170,
+    "en": "greeting",
+    "ja": "%{recipient}様"
+    
+    },{
+    "id": 171,
+    "en": "instruction",
+    "ja": "以下のリンクをクリックし、メールアドレスの確認手続を完了させてください。"
+    
+    },{
+    "id": 172,
+    "en": "subject",
+    "ja": "メールアドレス確認メール"
+    
+    },{
+    "id": 173,
+    "en": "greeting",
+    "ja": "こんにちは、%{recipient}様。"
+    
+    },{
+    "id": 174,
+    "en": "message",
+    "ja": "あなたのメールの変更（%{email}）をお知らせいたします。"
+    
+    },{
+    "id": 175,
+    "en": "subject",
+    "ja": "メール変更完了"
+    
+    },{
+    "id": 176,
+    "en": "greeting",
+    "ja": "%{recipient}様"
+    
+    },{
+    "id": 177,
+    "en": "message",
+    "ja": "パスワードが再設定されました。"
+    
+    },{
+    "id": 178,
+    "en": "subject",
+    "ja": "パスワードの変更について"
+    
+    },{
+    "id": 179,
+    "en": "action",
+    "ja": "パスワード変更"
+    
+    },{
+    "id": 180,
+    "en": "greeting",
+    "ja": "%{recipient}様"
+    
+    },{
+    "id": 181,
+    "en": "instruction",
+    "ja": "パスワード再設定の依頼を受けたため、メールを送信しています。下のリンクからパスワードの再設定ができます。"
+    
+    },{
+    "id": 182,
+    "en": "instruction 2",
+    "ja": "パスワード再設定の依頼をしていない場合、このメールを無視してください。"
+    
+    },{
+    "id": 183,
+    "en": "instruction 3",
+    "ja": "パスワードの再設定は、上のリンクから新しいパスワードを登録するまで完了しません。"
+    
+    },{
+    "id": 184,
+    "en": "subject",
+    "ja": "パスワードの再設定について"
+    
+    },{
+    "id": 185,
+    "en": "action",
+    "ja": "アカウントのロック解除"
+    
+    },{
+    "id": 186,
+    "en": "greeting",
+    "ja": "%{recipient}様"
+    
+    },{
+    "id": 187,
+    "en": "instruction",
+    "ja": "アカウントのロックを解除するには下のリンクをクリックしてください。"
+    
+    },{
+    "id": 188,
+    "en": "message",
+    "ja": "ログイン失敗が繰り返されたため、アカウントはロックされています。"
+    
+    },{
+    "id": 189,
+    "en": "subject",
+    "ja": "アカウントのロック解除について"
+    
+    },{
+    "id": 190,
+    "en": "failure",
+    "ja": "%{kind} アカウントによる認証に失敗しました。理由：（%{reason}）"
+    
+    },{
+    "id": 191,
+    "en": "success",
+    "ja": "%{kind} アカウントによる認証に成功しました。"
+    
+    },{
+    "id": 192,
+    "en": "change my password",
+    "ja": "パスワードを変更する"
+    
+    },{
+    "id": 193,
+    "en": "change your password",
+    "ja": "パスワードを変更"
+    
+    },{
+    "id": 194,
+    "en": "confirm new password",
+    "ja": "確認用新しいパスワード"
+    
+    },{
+    "id": 195,
+    "en": "new password",
+    "ja": "新しいパスワード"
+    
+    },{
+    "id": 196,
+    "en": "forgot your password",
+    "ja": "パスワードを忘れましたか？"
+    
+    },{
+    "id": 197,
+    "en": "send me reset password instructions",
+    "ja": "パスワードの再設定方法を送信する"
+    
+    },{
+    "id": 198,
+    "en": "no token",
+    "ja": "このページにはアクセスできません。パスワード再設定メールのリンクからアクセスされた場合には、URL をご確認ください。"
+    
+    },{
+    "id": 199,
+    "en": "send instructions",
+    "ja": "パスワードの再設定について数分以内にメールでご連絡いたします。"
+    
+    },{
+    "id": 200,
+    "en": "send paranoid instructions",
+    "ja": "メールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。"
+    
+    },{
+    "id": 201,
+    "en": "updated",
+    "ja": "パスワードが正しく変更されました。"
+    
+    },{
+    "id": 202,
+    "en": "updated not active",
+    "ja": "パスワードが正しく変更されました。"
+    
+    },{
+    "id": 203,
+    "en": "destroyed",
+    "ja": "アカウントを削除しました。またのご利用をお待ちしております。"
+    
+    },{
+    "id": 204,
+    "en": "are you sure",
+    "ja": "本当によろしいですか？"
+    
+    },{
+    "id": 205,
+    "en": "cancel my account",
+    "ja": "アカウント削除"
+    
+    },{
+    "id": 206,
+    "en": "currently waiting confirmation for email",
+    "ja": "%{email} の確認待ち"
+    
+    },{
+    "id": 207,
+    "en": "leave blank if you don t want to change it",
+    "ja": "空欄のままなら変更しません"
+    
+    },{
+    "id": 208,
+    "en": "title",
+    "ja": "%{resource}編集"
+    
+    },{
+    "id": 209,
+    "en": "unhappy",
+    "ja": "気に入りません"
+    
+    },{
+    "id": 210,
+    "en": "update",
+    "ja": "更新"
+    
+    },{
+    "id": 211,
+    "en": "we need your current password to confirm your changes",
+    "ja": "変更を反映するには現在のパスワードを入力してください"
+    
+    },{
+    "id": 212,
+    "en": "sign up",
+    "ja": "アカウント登録"
+    
+    },{
+    "id": 213,
+    "en": "signed up",
+    "ja": "アカウント登録が完了しました。"
+    
+    },{
+    "id": 214,
+    "en": "signed up but inactive",
+    "ja": "ログインするためには、アカウントを有効化してください。"
+    
+    },{
+    "id": 215,
+    "en": "signed up but locked",
+    "ja": "アカウントがロックされているためログインできません。"
+    
+    },{
+    "id": 216,
+    "en": "signed up but unconfirmed",
+    "ja": "本人確認用のメールを送信しました。メール内のリンクからアカウントを有効化させてください。"
+    
+    },{
+    "id": 217,
+    "en": "update needs confirmation",
+    "ja": "アカウント情報を変更しました。変更されたメールアドレスの本人確認のため、本人確認用メールより確認処理をおこなってください。"
+    
+    },{
+    "id": 218,
+    "en": "updated",
+    "ja": "アカウント情報を変更しました。"
+    
+    },{
+    "id": 219,
+    "en": "updated but not signed in",
+    "ja": "あなたのアカウントは正常に更新されましたが、パスワードが変更されたため、再度ログインしてください。"
+    
+    },{
+    "id": 220,
+    "en": "already signed out",
+    "ja": "既にログアウト済みです。"
+    
+    },{
+    "id": 221,
+    "en": "sign in",
+    "ja": "ログイン"
+    
+    },{
+    "id": 222,
+    "en": "signed in",
+    "ja": "ログインしました。"
+    
+    },{
+    "id": 223,
+    "en": "signed out",
+    "ja": "ログアウトしました。"
+    
+    },{
+    "id": 224,
+    "en": "back",
+    "ja": "戻る"
+    
+    },{
+    "id": 225,
+    "en": "didn t receive confirmation instructions",
+    "ja": "アカウント確認のメールを受け取っていませんか？"
+    
+    },{
+    "id": 226,
+    "en": "didn t receive unlock instructions",
+    "ja": "アカウントのロック解除方法のメールを受け取っていませんか？"
+    
+    },{
+    "id": 227,
+    "en": "forgot your password",
+    "ja": "パスワードを忘れましたか？"
+    
+    },{
+    "id": 228,
+    "en": "sign in",
+    "ja": "ログイン"
+    
+    },{
+    "id": 229,
+    "en": "sign in with provider",
+    "ja": "%{provider}でログイン"
+    
+    },{
+    "id": 230,
+    "en": "sign up",
+    "ja": "アカウント登録"
+    
+    },{
+    "id": 231,
+    "en": "minimum password length",
+    "ja": "（%{count}字以上）"
+    
+    },{
+    "id": 232,
+    "en": "resend unlock instructions",
+    "ja": "アカウントのロック解除方法を再送する"
+    
+    },{
+    "id": 233,
+    "en": "send instructions",
+    "ja": "アカウントのロック解除方法を数分以内にメールでご連絡します。"
+    
+    },{
+    "id": 234,
+    "en": "send paranoid instructions",
+    "ja": "アカウントが見つかった場合、アカウントのロック解除方法を数分以内にメールでご連絡します。"
+    
+    },{
+    "id": 235,
+    "en": "unlocked",
+    "ja": "アカウントをロック解除しました。"
+    
+    },{
+    "id": 236,
+    "en": "already confirmed",
+    "ja": "は既に登録済みです。ログインしてください。"
+    
+    },{
+    "id": 237,
+    "en": "confirmation period expired",
+    "ja": "の期限が切れました。%{period} までに確認する必要があります。 新しくリクエストしてください。"
+    
+    },{
+    "id": 238,
+    "en": "expired",
+    "ja": "の有効期限が切れました。新しくリクエストしてください。"
+    
+    },{
+    "id": 239,
+    "en": "not found",
+    "ja": "は見つかりませんでした。"
+    
+    },{
+    "id": 240,
+    "en": "not locked",
+    "ja": "はロックされていません。"
+    
+    },{
+    "id": 241,
+    "en": "one",
+    "ja": "エラーが発生したため %{resource} は保存されませんでした。"
+    
+    },{
+    "id": 242,
+    "en": "other",
+    "ja": "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
+    
+    },{
+    "id": 243,
+    "en": "blank",
+    "ja": "空白にすることはできません"
+    
+    },{
+    "id": 244,
+    "en": "taken",
+    "ja": "すでに使用されている"
+    
+    },{
+    "id": 245,
+    "en": "too short",
+    "ja": "短すぎます（最小は%{count}文字です）"
+    
+    },{
+    "id": 246,
+    "en": "greater than or equal to",
+    "ja": "は%{count}USDT以上の値にしてください"
+    
+    },{
+    "id": 247,
+    "en": "insufficient amount",
+    "ja": "は総収入以下の値にしてください"
+    
+    },{
+    "id": 248,
+    "en": "greater than or equal to",
+    "ja": "は%{count}USDT以上の値にしてください"
+    
+    },{
+    "id": 249,
+    "en": "verified address cannot be modified",
+    "ja": "確認済みアドレスは変更できません。"
+    
+    },{
+    "id": 250,
+    "en": "taken",
+    "ja": "USDTアドレスはすでに取得されています。"
+    
+    },{
+    "id": 251,
+    "en": "insufficient points",
+    "ja": "十分ではありません"
+    
+    },{
+    "id": 252,
+    "en": "is not valid",
+    "ja": "有効ではありません。ユーザータイプはエージェントである必要があります。"
+    
+    },{
+    "id": 253,
+    "en": "create",
+    "ja": "メッセージを送信"
+    
+    },{
+    "id": 254,
+    "en": "create",
+    "ja": "取引の確認"
+    
+    },{
+    "id": 255,
+    "en": "create",
+    "ja": "出金を依頼"
+    
+    },{
+    "id": 256,
+    "en": "complete sign up",
+    "ja": "お客様情報登録"
+    
+    },{
+    "id": 257,
+    "en": "incomplete sign up",
+    "ja": "続行する前にサインアップを完了してください"
+    
+    },{
+    "id": 258,
+    "en": "return to login",
+    "ja": "ログインページに戻る"
+    
+    },{
+    "id": 259,
+    "en": "return to dashboard",
+    "ja": "ダッシュボードに戻る"
+    
+    },{
+    "id": 260,
+    "en": "error",
+    "ja": "エラー"
+    
+    },{
+    "id": 261,
+    "en": "not allowed",
+    "ja": "禁止されている"
+    
+    },{
+    "id": 262,
+    "en": "copied",
+    "ja": "コピーしました"
+    
+    },{
+    "id": 263,
+    "en": "complete",
+    "ja": "完了"
+    
+    },{
+    "id": 264,
+    "en": "logout",
+    "ja": "ログアウト"
+    
+    },{
+    "id": 265,
+    "en": "total assets",
+    "ja": "総資産"
+    
+    },{
+    "id": 266,
+    "en": "weekly",
+    "ja": "週間"
+    
+    },{
+    "id": 267,
+    "en": "amount",
+    "ja": "金額"
+    
+    },{
+    "id": 268,
+    "en": "commission",
+    "ja": "手数料"
+    
+    },{
+    "id": 269,
+    "en": "week",
+    "ja": "週間"
+    
+    },{
+    "id": 270,
+    "en": "yield",
+    "ja": "利回り"
+    
+    },{
+    "id": 271,
+    "en": "bonus",
+    "ja": "ボーナス"
+    
+    },{
+    "id": 272,
+    "en": "from",
+    "ja": "から"
+    
+    },{
+    "id": 273,
+    "en": "percentage",
+    "ja": "割合"
+    
+    },{
+    "id": 274,
+    "en": "date label",
+    "ja": "日付"
+    
+    },{
+    "id": 275,
+    "en": "status",
+    "ja": "ステータス"
+    
+    },{
+    "id": 276,
+    "en": "all fields are required",
+    "ja": "全て必須項目です"
+    
+    },{
+    "id": 277,
+    "en": "active language",
+    "ja": "日本語"
+    
+    },{
+    "id": 278,
+    "en": "japanese",
+    "ja": "日本語"
+    
+    },{
+    "id": 279,
+    "en": "english",
+    "ja": "ENGLISH"
+    
+    },{
+    "id": 280,
+    "en": "hokkaido",
+    "ja": "北海道"
+    
+    },{
+    "id": 281,
+    "en": "aomori",
+    "ja": "青森県"
+    
+    },{
+    "id": 282,
+    "en": "iwate",
+    "ja": "岩手県"
+    
+    },{
+    "id": 283,
+    "en": "miyagi",
+    "ja": "宮城県"
+    
+    },{
+    "id": 284,
+    "en": "akita",
+    "ja": "秋田県"
+    
+    },{
+    "id": 285,
+    "en": "yamagata",
+    "ja": "山形県"
+    
+    },{
+    "id": 286,
+    "en": "fukushima",
+    "ja": "福島県"
+    
+    },{
+    "id": 287,
+    "en": "ibaraki",
+    "ja": "茨城県"
+    
+    },{
+    "id": 288,
+    "en": "tochigi",
+    "ja": "栃木県"
+    
+    },{
+    "id": 289,
+    "en": "gunma",
+    "ja": "群馬県"
+    
+    },{
+    "id": 290,
+    "en": "saitama",
+    "ja": "埼玉県"
+    
+    },{
+    "id": 291,
+    "en": "chiba",
+    "ja": "千葉県"
+    
+    },{
+    "id": 292,
+    "en": "tokyo",
+    "ja": "東京都"
+    
+    },{
+    "id": 293,
+    "en": "kanagawa",
+    "ja": "神奈川県"
+    
+    },{
+    "id": 294,
+    "en": "niigata",
+    "ja": "新潟県"
+    
+    },{
+    "id": 295,
+    "en": "toyama",
+    "ja": "富山県"
+    
+    },{
+    "id": 296,
+    "en": "ishikawa",
+    "ja": "石川県"
+    
+    },{
+    "id": 297,
+    "en": "fukui",
+    "ja": "福井県"
+    
+    },{
+    "id": 298,
+    "en": "yamanashi",
+    "ja": "山梨県"
+    
+    },{
+    "id": 299,
+    "en": "nagano",
+    "ja": "長野県"
+    
+    },{
+    "id": 300,
+    "en": "gifu",
+    "ja": "岐阜県"
+    
+    },{
+    "id": 301,
+    "en": "shizuoka",
+    "ja": "静岡県"
+    
+    },{
+    "id": 302,
+    "en": "aichi",
+    "ja": "愛知県"
+    
+    },{
+    "id": 303,
+    "en": "mie",
+    "ja": "三重県"
+    
+    },{
+    "id": 304,
+    "en": "shiga",
+    "ja": "滋賀県"
+    
+    },{
+    "id": 305,
+    "en": "kyoto",
+    "ja": "京都府"
+    
+    },{
+    "id": 306,
+    "en": "osaka",
+    "ja": "大阪府"
+    
+    },{
+    "id": 307,
+    "en": "hyogo",
+    "ja": "兵庫県"
+    
+    },{
+    "id": 308,
+    "en": "nara",
+    "ja": "奈良県"
+    
+    },{
+    "id": 309,
+    "en": "wakayama",
+    "ja": "和歌山県"
+    
+    },{
+    "id": 310,
+    "en": "tottori",
+    "ja": "鳥取県"
+    
+    },{
+    "id": 311,
+    "en": "shimane",
+    "ja": "島根県"
+    
+    },{
+    "id": 312,
+    "en": "okayama",
+    "ja": "岡山県"
+    
+    },{
+    "id": 313,
+    "en": "hiroshima",
+    "ja": "広島県"
+    
+    },{
+    "id": 314,
+    "en": "yamaguchi",
+    "ja": "山口県"
+    
+    },{
+    "id": 315,
+    "en": "tokushima",
+    "ja": "徳島県"
+    
+    },{
+    "id": 316,
+    "en": "kagawa",
+    "ja": "香川県"
+    
+    },{
+    "id": 317,
+    "en": "ehime",
+    "ja": "愛媛県"
+    
+    },{
+    "id": 318,
+    "en": "kochi",
+    "ja": "高知県"
+    
+    },{
+    "id": 319,
+    "en": "fukuoka",
+    "ja": "福岡県"
+    
+    },{
+    "id": 320,
+    "en": "saga",
+    "ja": "佐賀県"
+    
+    },{
+    "id": 321,
+    "en": "nagasaki",
+    "ja": "長崎県"
+    
+    },{
+    "id": 322,
+    "en": "kumamoto",
+    "ja": "熊本県"
+    
+    },{
+    "id": 323,
+    "en": "oita",
+    "ja": "大分県"
+    
+    },{
+    "id": 324,
+    "en": "miyazaki",
+    "ja": "宮崎県"
+    
+    },{
+    "id": 325,
+    "en": "kagoshima",
+    "ja": "鹿児島県"
+    
+    },{
+    "id": 326,
+    "en": "okinawa",
+    "ja": "沖縄県"
+    
+    },{
+    "id": 327,
+    "en": "request changes",
+    "ja": "変更をリクエストする"
+    
+    },{
+    "id": 328,
+    "en": "approve",
+    "ja": "承認する"
+    
+    },{
+    "id": 329,
+    "en": "make agent",
+    "ja": "エージェントを作る"
+    
+    },{
+    "id": 330,
+    "en": "subject",
+    "ja": "%{name}からの新しいメッセージがあります"
+    
+    },{
+    "id": 331,
+    "en": "here is message details",
+    "ja": "メッセージの詳細は次のとおりです。"
+    
+    },{
+    "id": 332,
+    "en": "id",
+    "ja": "ID"
+    
+    },{
+    "id": 333,
+    "en": "created at",
+    "ja": "購入日"
+    
+    },{
+    "id": 334,
+    "en": "updated at",
+    "ja": "更新日"
+    
+    },{
+    "id": 335,
+    "en": "resource type",
+    "ja": "リソース種別"
+    
+    },{
+    "id": 336,
+    "en": "author type",
+    "ja": "作成者種別"
+    
+    },{
+    "id": 337,
+    "en": "resource",
+    "ja": "リソース"
+    
+    },{
+    "id": 338,
+    "en": "author",
+    "ja": "作成者"
+    
+    },{
+    "id": 339,
+    "en": "body",
+    "ja": "本文"
+    
+    },{
+    "id": 340,
+    "en": "namespace",
+    "ja": "名前空間"
+    
+    },{
+    "id": 341,
+    "en": "status",
+    "ja": "状態"
+    
+    },{
+    "id": 342,
+    "en": "amount",
+    "ja": "金額"
+    
+    },{
+    "id": 343,
+    "en": "paid",
+    "ja": "支払い済"
+    
+    },{
+    "id": 344,
+    "en": "admin",
+    "ja": "管理者"
+    
+    },{
+    "id": 345,
+    "en": "admin user",
+    "ja": "管理者ユーザー"
+    
+    },{
+    "id": 346,
+    "en": "comment",
+    "ja": "コメント"
+    
+    },{
+    "id": 347,
+    "en": "contact",
+    "ja": "連絡先"
+    
+    },{
+    "id": 348,
+    "en": "transaction",
+    "ja": "トランザクション"
+    
+    },{
+    "id": 349,
+    "en": "deposit",
+    "ja": "デポジット"
+    
+    },{
+    "id": 350,
+    "en": "withdrawal",
+    "ja": "出金依頼"
+    
+    },{
+    "id": 351,
+    "en": "kyc application",
+    "ja": "KYC申請"
+    
+    },{
+    "id": 352,
+    "en": "bonus",
+    "ja": "ボーナス"
+    
+    },{
+    "id": 353,
+    "en": "commission",
+    "ja": "コミッション"
+    
+    },{
+    "id": 354,
+    "en": "yield",
+    "ja": "利回り"
+    
+    },{
+    "id": 355,
+    "en": "product",
+    "ja": "商品"
+    
+    },{
+    "id": 356,
+    "en": "order",
+    "ja": "購入履歴"
+    
+    },{
+    "id": 357,
+    "en": "order detail",
+    "ja": "購入の詳細"
+    
+    },{
+    "id": 358,
+    "en": "postal code",
+    "ja": "郵便番号"
+    
+    },{
+    "id": 359,
+    "en": "prefecture",
+    "ja": "都道府県"
+    
+    },{
+    "id": 360,
+    "en": "municipal district",
+    "ja": "市町村区"
+    
+    },{
+    "id": 361,
+    "en": "address 1",
+    "ja": "住所1"
+    
+    },{
+    "id": 362,
+    "en": "verifying document",
+    "ja": "本人確認書類"
+    
+    },{
+    "id": 363,
+    "en": "verifying document 2",
+    "ja": "本人確認書類2"
+    
+    },{
+    "id": 364,
+    "en": "total commission",
+    "ja": "合計嘱託"
+    
+    },{
+    "id": 365,
+    "en": "total yield",
+    "ja": "合計利回り"
+    
+    },{
+    "id": 366,
+    "en": "total bonus",
+    "ja": "合計ボーナス"
+    
+    },{
+    "id": 367,
+    "en": "total unpaid commission",
+    "ja": "獲得予定コミッション金額"
+    
+    },{
+    "id": 368,
+    "en": "total unpaid yield",
+    "ja": "獲得予定利回り"
+    
+    },{
+    "id": 369,
+    "en": "total unpaid bonus",
+    "ja": "獲得予定ボーナス"
+    
+    },{
+    "id": 370,
+    "en": "admin",
+    "ja": "管理者"
+    
+    },{
+    "id": 371,
+    "en": "no star",
+    "ja": "0スター"
+    
+    },{
+    "id": 372,
+    "en": "one star",
+    "ja": "1スター"
+    
+    },{
+    "id": 373,
+    "en": "two star",
+    "ja": "2スター"
+    
+    },{
+    "id": 374,
+    "en": "three star",
+    "ja": "3スター"
+    
+    },{
+    "id": 375,
+    "en": "four star",
+    "ja": "4スター"
+    
+    },{
+    "id": 376,
+    "en": "five star",
+    "ja": "5スター"
+    
+    },{
+    "id": 377,
+    "en": "email",
+    "ja": "Eメール"
+    
+    },{
+    "id": 378,
+    "en": "password",
+    "ja": "パスワード"
+    
+    },{
+    "id": 379,
+    "en": "password confirmation",
+    "ja": "パスワード（確認用）"
+    
+    },{
+    "id": 380,
+    "en": "remember created at",
+    "ja": "ログイン記憶時刻"
+    
+    },{
+    "id": 381,
+    "en": "remember me",
+    "ja": "ログインを記憶する"
+    
+    },{
+    "id": 382,
+    "en": "reset password sent at",
+    "ja": "パスワードリセット送信時刻"
+    
+    },{
+    "id": 383,
+    "en": "reset password token",
+    "ja": "パスワードリセット用トークン"
+    
+    },{
+    "id": 384,
+    "en": "title",
+    "ja": "タイトル"
+    
+    },{
+    "id": 385,
+    "en": "message",
+    "ja": "メッセージ"
+    
+    },{
+    "id": 386,
+    "en": "user",
+    "ja": "ユーザー"
+    
+    },{
+    "id": 387,
+    "en": "tx id",
+    "ja": "Transaction ID"
+    
+    },{
+    "id": 388,
+    "en": "value",
+    "ja": "値"
+    
+    },{
+    "id": 389,
+    "en": "amount",
+    "ja": "出金額"
+    
+    },{
+    "id": 390,
+    "en": "created at",
+    "ja": "依頼日"
+    
+    },{
+    "id": 391,
+    "en": "user kyc name or user email contains",
+    "ja": "ユーザー名または電子メール"
+    
+    },{
+    "id": 392,
+    "en": "kyc name",
+    "ja": "フルネーム"
+    
+    },{
+    "id": 393,
+    "en": "address",
+    "ja": "USDTアドレス"
+    
+    },{
+    "id": 394,
+    "en": "address qr code",
+    "ja": "USDTアドレスQRコード"
+    
+    },{
+    "id": 395,
+    "en": "requested",
+    "ja": "処理中"
+    
+    },{
+    "id": 396,
+    "en": "completed",
+    "ja": "出金完了"
+    
+    },{
+    "id": 397,
+    "en": "name",
+    "ja": "氏名"
+    
+    },{
+    "id": 398,
+    "en": "user email",
+    "ja": "メールアドレス"
+    
+    },{
+    "id": 399,
+    "en": "title",
+    "ja": "タイトル"
+    
+    },{
+    "id": 400,
+    "en": "phone",
+    "ja": "携帯電話番号"
+    
+    },{
+    "id": 401,
+    "en": "postal code",
+    "ja": "郵便番号"
+    
+    },{
+    "id": 402,
+    "en": "prefecture",
+    "ja": "都道府県"
+    
+    },{
+    "id": 403,
+    "en": "municipal district",
+    "ja": "市町村区"
+    
+    },{
+    "id": 404,
+    "en": "address 1",
+    "ja": "住所1"
+    
+    },{
+    "id": 405,
+    "en": "verifying document",
+    "ja": "本人確認書類"
+    
+    },{
+    "id": 406,
+    "en": "verifying document 2",
+    "ja": "本人確認書類2"
+    
+    },{
+    "id": 407,
+    "en": "rejected reason",
+    "ja": "変更をリクエストする理由"
+    
+    },{
+    "id": 408,
+    "en": "status",
+    "ja": "ステータス"
+    
+    },{
+    "id": 409,
+    "en": "unfilled",
+    "ja": "未申請"
+    
+    },{
+    "id": 410,
+    "en": "in review",
+    "ja": "申請中"
+    
+    },{
+    "id": 411,
+    "en": "change requested",
+    "ja": "変更依頼中"
+    
+    },{
+    "id": 412,
+    "en": "approved",
+    "ja": "承認済"
+    
+    },{
+    "id": 413,
+    "en": "recipient",
+    "ja": "受取人"
+    
+    },{
+    "id": 414,
+    "en": "child",
+    "ja": "ダウンライン"
+    
+    },{
+    "id": 415,
+    "en": "recipient",
+    "ja": "受取人"
+    
+    },{
+    "id": 416,
+    "en": "child",
+    "ja": "ダウンライン"
+    
+    },{
+    "id": 417,
+    "en": "recipient",
+    "ja": "受取人"
+    
+    },{
+    "id": 418,
+    "en": "rate",
+    "ja": "レート"
+    
+    },{
+    "id": 419,
+    "en": "name",
+    "ja": "商品名"
+    
+    },{
+    "id": 420,
+    "en": "price",
+    "ja": "価格"
+    
+    },{
+    "id": 421,
+    "en": "agent",
+    "ja": "エージェント"
+    
+    },{
+    "id": 422,
+    "en": "user",
+    "ja": "ユーザー"
+    
+    },{
+    "id": 423,
+    "en": "total price",
+    "ja": "合計金額"
+    
+    },{
+    "id": 424,
+    "en": "initiated",
+    "ja": "注文済"
+    
+    },{
+    "id": 425,
+    "en": "delivered",
+    "ja": "配達完了"
+    
+    },{
+    "id": 426,
+    "en": "angel points",
+    "ja": "Angelポイント"
+    
+    },{
+    "id": 427,
+    "en": "site name",
+    "ja": "Angel"
+    
+    },{
+    "id": 428,
+    "en": "title",
+    "ja": "ダッシュボード"
+    
+    },{
+    "id": 429,
+    "en": "title",
+    "ja": "紹介図"
+    
+    },{
+    "id": 430,
+    "en": "title",
+    "ja": "マイページ"
+    
+    },{
+    "id": 431,
+    "en": "title",
+    "ja": "口座"
+    
+    },{
+    "id": 432,
+    "en": "title",
+    "ja": "購入"
+    
+    },{
+    "id": 433,
+    "en": "title",
+    "ja": "購入"
+    
+    },{
+    "id": 434,
+    "en": "title",
+    "ja": "注文履歴"
+    
+    },{
+    "id": 435,
+    "en": "title",
+    "ja": "お問い合わせ"
+    
+    },{
+    "id": 436,
+    "en": "title",
+    "ja": "お問い合わせ"
+    
+    },{
+    "id": 437,
+    "en": "title",
+    "ja": "404 Not Found"
+    
+    },{
+    "id": 438,
+    "en": "title",
+    "ja": "500 Internal Server Error"
+    
+    },{
+    "id": 439,
+    "en": "title",
+    "ja": "新規登録"
+    
+    },{
+    "id": 440,
+    "en": "title",
+    "ja": "新規登録"
+    
+    },{
+    "id": 441,
+    "en": "title",
+    "ja": "パスワードリセット"
+    
+    },{
+    "id": 442,
+    "en": "title",
+    "ja": "パスワードリセット"
+    
+    },{
+    "id": 443,
+    "en": "title",
+    "ja": "アカウント確認メール再送"
+    
+    },{
+    "id": 444,
+    "en": "title",
+    "ja": "新規登録"
+    
+    },{
+    "id": 445,
+    "en": "title",
+    "ja": "パスワードリセット"
+    
+    },{
+    "id": 446,
+    "en": "title",
+    "ja": "パスワードリセット"
+    
+    },{
+    "id": 447,
+    "en": "title",
+    "ja": "ログイン"
+    
+    },{
+    "id": 448,
+    "en": "title",
+    "ja": "住所確認"
+    
+    },{
+    "id": 449,
+    "en": "title",
+    "ja": "収益"
+    
+    },{
+    "id": 450,
     "en": "dashboard",
     "ja": "ダッシュボード"
+    
     },{
-    "en": "dashboard",
-    "ja": "ダッシュ"
+    "id": 451,
+    "en": "intro diagrams",
+    "ja": "紹介図"
+    
+    },{
+    "id": 452,
+    "en": "profile",
+    "ja": "マイページ"
+    
+    },{
+    "id": 453,
+    "en": "account",
+    "ja": "口座"
+    
+    },{
+    "id": 454,
+    "en": "purchases",
+    "ja": "購入"
+    
+    },{
+    "id": 455,
+    "en": "purchase histories",
+    "ja": "注文履歴"
+    
+    },{
+    "id": 456,
+    "en": "contact",
+    "ja": "お問い合わせ"
+    
+    },{
+    "id": 457,
+    "en": "yes",
+    "ja": "はい"
+    
+    },{
+    "id": 458,
+    "en": "no",
+    "ja": "番号"
+    
+    },{
+    "id": 459,
+    "en": "text",
+    "ja": "必須"
+    
+    },{
+    "id": 460,
+    "en": "mark",
+    "ja": ""
+    
+    },{
+    "id": 461,
+    "en": "default message",
+    "ja": "以下の問題を確認してください。"
+    
+    },{
+    "id": 462,
+    "en": "sign up",
+    "ja": "新規登録"
+    
+    },{
+    "id": 463,
+    "en": "sign up registration",
+    "ja": "お客様情報登録"
+    
+    },{
+    "id": 464,
+    "en": "sign in",
+    "ja": "ログイン"
+    
+    },{
+    "id": 465,
+    "en": "password reset",
+    "ja": "パスワードリセット"
+    
+    },{
+    "id": 466,
+    "en": "resend unlock instructions",
+    "ja": "ロック解除手順を再送信する"
+    
+    },{
+    "id": 467,
+    "en": "resend confirmation instructions",
+    "ja": "確認手順を再送信する"
+    
+    },{
+    "id": 468,
+    "en": "email",
+    "ja": "メールアドレス"
+    
+    },{
+    "id": 469,
+    "en": "full name",
+    "ja": "フルネーム"
+    
+    },{
+    "id": 470,
+    "en": "contact",
+    "ja": "携帯電話番号"
+    
+    },{
+    "id": 471,
+    "en": "password",
+    "ja": "パスワード"
+    
+    },{
+    "id": 472,
+    "en": "new password",
+    "ja": "新規パスワード"
+    
+    },{
+    "id": 473,
+    "en": "confirm new password",
+    "ja": "新しいパスワードを確認します"
+    
+    },{
+    "id": 474,
+    "en": "address",
+    "ja": "入出金用USDTアドレス"
+    
+    },{
+    "id": 475,
+    "en": "minimum password length",
+    "ja": "パスワードは%{length}文字英数字"
+    
+    },{
+    "id": 476,
+    "en": "phone number without hyphen",
+    "ja": "電話番号はハイフン無し"
+    
+    },{
+    "id": 477,
+    "en": "forgot password",
+    "ja": "パスワードを忘れた方はこちら"
+    
+    },{
+    "id": 478,
+    "en": "cancel",
+    "ja": "キャンセル"
+    
+    },{
+    "id": 479,
+    "en": "send",
+    "ja": "送信"
+    
+    },{
+    "id": 480,
+    "en": "done",
+    "ja": "完了"
+    
+    },{
+    "id": 481,
+    "en": "sign in",
+    "ja": "ログイン"
+    
+    },{
+    "id": 482,
+    "en": "name",
+    "ja": "田中太郎"
+    
+    },{
+    "id": 483,
+    "en": "amount",
+    "ja": "通貨なしで金額を入力してください"
+    
+    },{
+    "id": 484,
+    "en": "address",
+    "ja": "入出金用USDTアドレス"
+    
+    },{
+    "id": 485,
+    "en": "update address",
+    "ja": "アドレスを更新"
+    
+    },{
+    "id": 486,
+    "en": "record invalid",
+    "ja": "バリデーションに失敗しました: %{errors}"
+    
+    },{
+    "id": 487,
+    "en": "has one",
+    "ja": "%{record}が存在しているので削除できません"
+    
+    },{
+    "id": 488,
+    "en": "has many",
+    "ja": "%{record}が存在しているので削除できません"
+    
+    },{
+    "id": 489,
+    "en": "0",
+    "ja": "日"
+    
+    },{
+    "id": 490,
+    "en": "1",
+    "ja": "月"
+    
+    },{
+    "id": 491,
+    "en": "2",
+    "ja": "火"
+    
+    },{
+    "id": 492,
+    "en": "3",
+    "ja": "水"
+    
+    },{
+    "id": 493,
+    "en": "4",
+    "ja": "木"
+    
+    },{
+    "id": 494,
+    "en": "5",
+    "ja": "金"
+    
+    },{
+    "id": 495,
+    "en": "6",
+    "ja": "土"
+    
+    },{
+    "id": 496,
+    "en": "0",
+    "ja": ""
+    
+    },{
+    "id": 497,
+    "en": "1",
+    "ja": "1月"
+    
+    },{
+    "id": 498,
+    "en": "2",
+    "ja": "2月"
+    
+    },{
+    "id": 499,
+    "en": "3",
+    "ja": "3月"
+    
+    },{
+    "id": 500,
+    "en": "4",
+    "ja": "4月"
+    
+    },{
+    "id": 501,
+    "en": "5",
+    "ja": "5月"
+    
+    },{
+    "id": 502,
+    "en": "6",
+    "ja": "6月"
+    
+    },{
+    "id": 503,
+    "en": "7",
+    "ja": "7月"
+    
+    },{
+    "id": 504,
+    "en": "8",
+    "ja": "8月"
+    
+    },{
+    "id": 505,
+    "en": "9",
+    "ja": "9月"
+    
+    },{
+    "id": 506,
+    "en": "10",
+    "ja": "10月"
+    
+    },{
+    "id": 507,
+    "en": "11",
+    "ja": "11月"
+    
+    },{
+    "id": 508,
+    "en": "12",
+    "ja": "12月"
+    
+    },{
+    "id": 509,
+    "en": "0",
+    "ja": "日曜日"
+    
+    },{
+    "id": 510,
+    "en": "1",
+    "ja": "月曜日"
+    
+    },{
+    "id": 511,
+    "en": "2",
+    "ja": "火曜日"
+    
+    },{
+    "id": 512,
+    "en": "3",
+    "ja": "水曜日"
+    
+    },{
+    "id": 513,
+    "en": "4",
+    "ja": "木曜日"
+    
+    },{
+    "id": 514,
+    "en": "5",
+    "ja": "金曜日"
+    
+    },{
+    "id": 515,
+    "en": "6",
+    "ja": "土曜日"
+    
+    },{
+    "id": 516,
+    "en": "default",
+    "ja": "%Y/%m/%d"
+    
+    },{
+    "id": 517,
+    "en": "long",
+    "ja": "%Y年%m月%d日(%a)"
+    
+    },{
+    "id": 518,
+    "en": "short",
+    "ja": "%m/%d"
+    
+    },{
+    "id": 519,
+    "en": "1",
+    "ja": "1月"
+    
+    },{
+    "id": 520,
+    "en": "2",
+    "ja": "2月"
+    
+    },{
+    "id": 521,
+    "en": "3",
+    "ja": "3月"
+    
+    },{
+    "id": 522,
+    "en": "4",
+    "ja": "4月"
+    
+    },{
+    "id": 523,
+    "en": "5",
+    "ja": "5月"
+    
+    },{
+    "id": 524,
+    "en": "6",
+    "ja": "6月"
+    
+    },{
+    "id": 525,
+    "en": "7",
+    "ja": "7月"
+    
+    },{
+    "id": 526,
+    "en": "8",
+    "ja": "8月"
+    
+    },{
+    "id": 527,
+    "en": "9",
+    "ja": "9月"
+    
+    },{
+    "id": 528,
+    "en": "10",
+    "ja": "10月"
+    
+    },{
+    "id": 529,
+    "en": "11",
+    "ja": "11月"
+    
+    },{
+    "id": 530,
+    "en": "12",
+    "ja": "12月"
+    
+    },{
+    "id": 531,
+    "en": "0",
+    "ja": ":year"
+    
+    },{
+    "id": 532,
+    "en": "1",
+    "ja": ":month"
+    
+    },{
+    "id": 533,
+    "en": "2",
+    "ja": ":day"
+    
+    },{
+    "id": 534,
+    "en": "one",
+    "ja": "約1時間"
+    
+    },{
+    "id": 535,
+    "en": "other",
+    "ja": "約%{count}時間"
+    
+    },{
+    "id": 536,
+    "en": "one",
+    "ja": "約1ヶ月"
+    
+    },{
+    "id": 537,
+    "en": "other",
+    "ja": "約%{count}ヶ月"
+    
+    },{
+    "id": 538,
+    "en": "one",
+    "ja": "約1年"
+    
+    },{
+    "id": 539,
+    "en": "other",
+    "ja": "約%{count}年"
+    
+    },{
+    "id": 540,
+    "en": "one",
+    "ja": "1年弱"
+    
+    },{
+    "id": 541,
+    "en": "other",
+    "ja": "%{count}年弱"
+    
+    },{
+    "id": 542,
+    "en": "half a minute",
+    "ja": "30秒前後"
+    
+    },{
+    "id": 543,
+    "en": "one",
+    "ja": "1秒以内"
+    
+    },{
+    "id": 544,
+    "en": "other",
+    "ja": "%{count}秒未満"
+    
+    },{
+    "id": 545,
+    "en": "one",
+    "ja": "1分以内"
+    
+    },{
+    "id": 546,
+    "en": "other",
+    "ja": "%{count}分未満"
+    
+    },{
+    "id": 547,
+    "en": "one",
+    "ja": "1年以上"
+    
+    },{
+    "id": 548,
+    "en": "other",
+    "ja": "%{count}年以上"
+    
+    },{
+    "id": 549,
+    "en": "one",
+    "ja": "1秒"
+    
+    },{
+    "id": 550,
+    "en": "other",
+    "ja": "%{count}秒"
+    
+    },{
+    "id": 551,
+    "en": "one",
+    "ja": "1分"
+    
+    },{
+    "id": 552,
+    "en": "other",
+    "ja": "%{count}分"
+    
+    },{
+    "id": 553,
+    "en": "one",
+    "ja": "1日"
+    
+    },{
+    "id": 554,
+    "en": "other",
+    "ja": "%{count}日"
+    
+    },{
+    "id": 555,
+    "en": "one",
+    "ja": "1ヶ月"
+    
+    },{
+    "id": 556,
+    "en": "other",
+    "ja": "%{count}ヶ月"
+    
+    },{
+    "id": 557,
+    "en": "one",
+    "ja": "1年"
+    
+    },{
+    "id": 558,
+    "en": "other",
+    "ja": "%{count}年"
+    
+    },{
+    "id": 559,
+    "en": "second",
+    "ja": "秒"
+    
+    },{
+    "id": 560,
+    "en": "minute",
+    "ja": "分"
+    
+    },{
+    "id": 561,
+    "en": "hour",
+    "ja": "時"
+    
+    },{
+    "id": 562,
+    "en": "day",
+    "ja": "日"
+    
+    },{
+    "id": 563,
+    "en": "month",
+    "ja": "月"
+    
+    },{
+    "id": 564,
+    "en": "year",
+    "ja": "年"
+    
+    },{
+    "id": 565,
+    "en": "format",
+    "ja": "%{attribute}%{message}"
+    
+    },{
+    "id": 566,
+    "en": "accepted",
+    "ja": "を受諾してください"
+    
+    },{
+    "id": 567,
+    "en": "blank",
+    "ja": "を入力してください"
+    
+    },{
+    "id": 568,
+    "en": "confirmation",
+    "ja": "と%{attribute}の入力が一致しません"
+    
+    },{
+    "id": 569,
+    "en": "empty",
+    "ja": "を入力してください"
+    
+    },{
+    "id": 570,
+    "en": "equal to",
+    "ja": "は%{count}にしてください"
+    
+    },{
+    "id": 571,
+    "en": "even",
+    "ja": "は偶数にしてください"
+    
+    },{
+    "id": 572,
+    "en": "exclusion",
+    "ja": "は予約されています"
+    
+    },{
+    "id": 573,
+    "en": "greater than",
+    "ja": "は%{count}より大きい値にしてください"
+    
+    },{
+    "id": 574,
+    "en": "greater than or equal to",
+    "ja": "は%{count}以上の値にしてください"
+    
+    },{
+    "id": 575,
+    "en": "inclusion",
+    "ja": "は一覧にありません"
+    
+    },{
+    "id": 576,
+    "en": "invalid",
+    "ja": "は不正な値です"
+    
+    },{
+    "id": 577,
+    "en": "less than",
+    "ja": "は%{count}より小さい値にしてください"
+    
+    },{
+    "id": 578,
+    "en": "less than or equal to",
+    "ja": "は%{count}以下の値にしてください"
+    
+    },{
+    "id": 579,
+    "en": "model invalid",
+    "ja": "バリデーションに失敗しました: %{errors}"
+    
+    },{
+    "id": 580,
+    "en": "not a number",
+    "ja": "は数値で入力してください"
+    
+    },{
+    "id": 581,
+    "en": "not an integer",
+    "ja": "は整数で入力してください"
+    
+    },{
+    "id": 582,
+    "en": "odd",
+    "ja": "は奇数にしてください"
+    
+    },{
+    "id": 583,
+    "en": "other than",
+    "ja": "は%{count}以外の値にしてください"
+    
+    },{
+    "id": 584,
+    "en": "present",
+    "ja": "は入力しないでください"
+    
+    },{
+    "id": 585,
+    "en": "required",
+    "ja": "を入力してください"
+    
+    },{
+    "id": 586,
+    "en": "taken",
+    "ja": "はすでに存在します"
+    
+    },{
+    "id": 587,
+    "en": "too long",
+    "ja": "は%{count}文字以内で入力してください"
+    
+    },{
+    "id": 588,
+    "en": "too short",
+    "ja": "は%{count}文字以上で入力してください"
+    
+    },{
+    "id": 589,
+    "en": "wrong length",
+    "ja": "は%{count}文字で入力してください"
+    
+    },{
+    "id": 590,
+    "en": "body",
+    "ja": "次の項目を確認してください"
+    
+    },{
+    "id": 591,
+    "en": "one",
+    "ja": "%{model}にエラーが発生しました"
+    
+    },{
+    "id": 592,
+    "en": "other",
+    "ja": "%{model}に%{count}個のエラーが発生しました"
+    
+    },{
+    "id": 593,
+    "en": "prompt",
+    "ja": "選択してください"
+    
+    },{
+    "id": 594,
+    "en": "create",
+    "ja": "登録する"
+    
+    },{
+    "id": 595,
+    "en": "submit",
+    "ja": "保存する"
+    
+    },{
+    "id": 596,
+    "en": "update",
+    "ja": "更新する"
+    
+    },{
+    "id": 597,
+    "en": "delimiter",
+    "ja": ","
+    
+    },{
+    "id": 598,
+    "en": "format",
+    "ja": "%n%u"
+    
+    },{
+    "id": 599,
+    "en": "separator",
+    "ja": "."
+    
+    },{
+    "id": 600,
+    "en": "unit",
+    "ja": "円"
+    
+    },{
+    "id": 601,
+    "en": "delimiter",
+    "ja": ","
+    
+    },{
+    "id": 602,
+    "en": "separator",
+    "ja": "."
+    
+    },{
+    "id": 603,
+    "en": "format",
+    "ja": "%n %u"
+    
+    },{
+    "id": 604,
+    "en": "billion",
+    "ja": "十億"
+    
+    },{
+    "id": 605,
+    "en": "million",
+    "ja": "百万"
+    
+    },{
+    "id": 606,
+    "en": "quadrillion",
+    "ja": "千兆"
+    
+    },{
+    "id": 607,
+    "en": "thousand",
+    "ja": "千"
+    
+    },{
+    "id": 608,
+    "en": "trillion",
+    "ja": "兆"
+    
+    },{
+    "id": 609,
+    "en": "unit",
+    "ja": ""
+    
+    },{
+    "id": 610,
+    "en": "delimiter",
+    "ja": ""
+    
+    },{
+    "id": 611,
+    "en": "format",
+    "ja": "%n%u"
+    
+    },{
+    "id": 612,
+    "en": "byte",
+    "ja": "バイト"
+    
+    },{
+    "id": 613,
+    "en": "eb",
+    "ja": "EB"
+    
+    },{
+    "id": 614,
+    "en": "gb",
+    "ja": "GB"
+    
+    },{
+    "id": 615,
+    "en": "kb",
+    "ja": "KB"
+    
+    },{
+    "id": 616,
+    "en": "mb",
+    "ja": "MB"
+    
+    },{
+    "id": 617,
+    "en": "pb",
+    "ja": "PB"
+    
+    },{
+    "id": 618,
+    "en": "tb",
+    "ja": "TB"
+    
+    },{
+    "id": 619,
+    "en": "delimiter",
+    "ja": ""
+    
+    },{
+    "id": 620,
+    "en": "format",
+    "ja": "%n%"
+    
+    },{
+    "id": 621,
+    "en": "delimiter",
+    "ja": ""
+    
+    },{
+    "id": 622,
+    "en": "last word connector",
+    "ja": "、"
+    
+    },{
+    "id": 623,
+    "en": "two words connector",
+    "ja": "、"
+    
+    },{
+    "id": 624,
+    "en": "words connector",
+    "ja": "、"
+    
+    },{
+    "id": 625,
+    "en": "am",
+    "ja": "午前"
+    
+    },{
+    "id": 626,
+    "en": "default",
+    "ja": "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+    
+    },{
+    "id": 627,
+    "en": "long",
+    "ja": "%Y/%m/%d %H:%M"
+    
+    },{
+    "id": 628,
+    "en": "short",
+    "ja": "%m/%d %H:%M"
+    
+    },{
+    "id": 629,
+    "en": "pm",
+    "ja": "午後"
+    
     },];
 
+console.log(documents)
+
 let idx = lunr(function () {
+    this.ref('id')
     this.field('en');
-    this.ref('ja');
+    this.field('ja');
 //   this.add({"en": "tags", "ja" : "タグ"})
     documents.forEach(function (doc) {
         this.add(doc)
@@ -48,8 +3192,11 @@ function lunr_search(term) {
             document.getElementById('formHolder').classList.remove("moveCenter");
             document.getElementById('formHolder').classList.add("moveTop");
             for (var i = 0; i < results.length; i++) {
-                var ref = results[i]['ref'];     
-                 document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'>"+ ref +"</li>";
+                var ref = results[i]['ref'];   
+                console.log(results[ref])
+                var en = documents[ref]['en'];
+                var ja = documents[ref]['ja']
+                 document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'>"+ ja +"</li><small>"+ en +"</small>";
             }
         } else {
             document.getElementById('formHolder').classList.remove("moveTop");

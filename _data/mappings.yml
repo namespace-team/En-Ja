@@ -64,8 +64,6 @@
   ja: "しばらくたってから再度アクセスしてください。"
 - en: "temporary registration completed"
   ja: "仮登録完了"
-- en: "verification sent message html"
-  ja: "<p>ご登録いただいた <span style=\"text-transform:lowercase\">%{email}</span> に認証メールをお送りしました。<br/>\n\nメールに記載された認証URLをクリックして、<br/>\n\n新規アカウント登録を完了させてください。</p>\n"
 - en: "if email not received"
   ja: "メールが届かない場合"
 - en: "check junk for email"
@@ -350,8 +348,6 @@
   ja: "こんにちは、%{recipient}様。"
 - en: "message"
   ja: "あなたのメールの変更（%{email}）をお知らせいたします。"
-- en: "message unconfirmed"
-  ja: null
 - en: "subject"
   ja: "メール変更完了"
 - en: "greeting"
@@ -1040,8 +1036,6 @@
   ja: "%Y年%m月%d日(%a)"
 - en: "short"
   ja: "%m/%d"
-- en: "0"
-  ja: null
 - en: "1"
   ja: "1月"
 - en: "2"
@@ -1202,26 +1196,14 @@
   ja: ","
 - en: "format"
   ja: "%n%u"
-- en: "precision"
-  ja: 0
 - en: "separator"
   ja: "."
-- en: "significant"
-  ja: false
-- en: "strip insignificant zeros"
-  ja: false
 - en: "unit"
   ja: "円"
 - en: "delimiter"
   ja: ","
-- en: "precision"
-  ja: 3
 - en: "separator"
   ja: "."
-- en: "significant"
-  ja: false
-- en: "strip insignificant zeros"
-  ja: false
 - en: "format"
   ja: "%n %u"
 - en: "billion"
@@ -1238,12 +1220,6 @@
   ja: ""
 - en: "delimiter"
   ja: ""
-- en: "precision"
-  ja: 3
-- en: "significant"
-  ja: true
-- en: "strip insignificant zeros"
-  ja: true
 - en: "format"
   ja: "%n%u"
 - en: "byte"
@@ -1282,4 +1258,3 @@
   ja: "%m/%d %H:%M"
 - en: "pm"
   ja: "午後"
-

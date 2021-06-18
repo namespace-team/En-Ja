@@ -1,16 +1,23 @@
 <script src="{{site.baseurl}}/js/lunrjs.js"></script>
 
 <script>
+{% assign counter = 0 %}
 document.getElementById('formHolder').classList.remove("moveTop");
 document.getElementById('formHolder').classList.add("moveCenter");
+
 var documents = [{% for data in site.data.mappings %}{
+    "id": {{ counter }},
     "en": "{{ data.en }}",
     "ja": "{{ data.ja }}"
+    {% assign counter = counter | plus: 1 %}
     },{% endfor %}];
 
+console.log(documents)
+
 let idx = lunr(function () {
+    this.ref('id')
     this.field('en');
-    this.ref('ja');
+    this.field('ja');
 //   this.add({"en": "tags", "ja" : "タグ"})
     documents.forEach(function (doc) {
         this.add(doc)
@@ -26,8 +33,11 @@ function lunr_search(term) {
             document.getElementById('formHolder').classList.remove("moveCenter");
             document.getElementById('formHolder').classList.add("moveTop");
             for (var i = 0; i < results.length; i++) {
-                var ref = results[i]['ref'];     
-                 document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'>"+ ref +"</li>";
+                var ref = results[i]['ref'];   
+                console.log(results[ref])
+                var en = documents[ref]['en'];
+                var ja = documents[ref]['ja']
+                 document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'>"+ ja +"</li><small>"+ en +"</small>";
             }
         } else {
             document.getElementById('formHolder').classList.remove("moveTop");
