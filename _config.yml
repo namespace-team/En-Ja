@@ -23,9 +23,8 @@ title: En-Ja
 description: >- # this means to ignore newlines until "baseurl:"
   English word to Japanese translation using lunr.js .
 baseurl: "/En-Ja" 
-url: "https://namespace-team.github.io/" 
+url: "" 
 # baseurl: "" 
-# url: "" 
 twitter_username: 
 github_username:  
 
