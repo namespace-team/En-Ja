@@ -1,0 +1,27 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+.moveCenter{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.moveTop{
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  // justify-content: center;
+  align-items: center;
+}
+input{
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px coral;
+}
+ul li{
+  list-style: square;
+}

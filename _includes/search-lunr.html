@@ -1,0 +1,47 @@
+<script src="/js/lunrjs.js"></script>
+
+<script>
+document.getElementById('formHolder').classList.remove("moveTop");
+document.getElementById('formHolder').classList.add("moveCenter");
+var documents = [{% for data in site.data.mappings %}{
+    "en": "{{ data.en }}",
+    "ja": "{{ data.ja }}"
+    },{% endfor %}];
+
+let idx = lunr(function () {
+    this.field('en');
+    this.ref('ja');
+//   this.add({"en": "tags", "ja" : "タグ"})
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        var results = idx.search(term);
+        if(results.length>0){
+            document.getElementById('formHolder').classList.remove("moveCenter");
+            document.getElementById('formHolder').classList.add("moveTop");
+            for (var i = 0; i < results.length; i++) {
+                var ref = results[i]['ref'];     
+                 document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'>"+ ref +"</li>";
+            }
+        } else {
+            document.getElementById('formHolder').classList.remove("moveTop");
+            document.getElementById('formHolder').classList.add("moveCenter");
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult' style='list-style: none;'>Not found...</li>";
+        }
+    }
+    return false;
+}
+</script>
+
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" autocomplete="off" id="searchBox" class="">
+    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Enter English word..." /></p>
+</form>
+<div id="lunrsearchresults" class="resultArea">
+    <ul></ul>
+</div>
